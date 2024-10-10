@@ -1,12 +1,18 @@
 package com.ss.batch.entity;
 
+import com.vladmihalcea.hibernate.type.json.JsonStringType;
+import com.vladmihalcea.hibernate.type.json.JsonType;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import org.hibernate.annotations.Type;
+import org.hibernate.annotations.TypeDef;
 
 import javax.persistence.*;
 import java.util.Map;
 
 @Table(name="user")
+@TypeDef(name = "json", typeClass = JsonStringType.class)
+@EqualsAndHashCode(callSuper=false)
 @Data
 @Entity
 public class UserEntity extends BaseEntity{

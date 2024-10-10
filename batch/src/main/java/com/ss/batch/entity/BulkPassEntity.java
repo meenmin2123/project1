@@ -17,7 +17,7 @@ public class BulkPassEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long bulkPassSeq;           // 대량 이용권 순번
 
-    private Integer packageSeq;         // 패키지 순번
+    private Long packageSeq;         // 패키지 순번
     private String userGroupId;         // 사용자 그룹 아이디
 
     @Enumerated(EnumType.STRING)
