@@ -20,6 +20,6 @@ public class MainController {
             log.warn("aws/v1 호출됨! warn 로그#################");
         }
 
-        return "<h1> aws v1</h1>";
+        return "<h1> aws v1 </h1>";
     }
 }
